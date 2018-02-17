@@ -1,9 +1,9 @@
 version: '2'
 services:
   nginx:
-  build: ./nginx
-  ports:
-    - "9000:80"
-  volumes:
-    - ./data/www:/var/www/html
-    - ./nginx/server.conf:/etc/nginx/nginx.conf
+    build: ./nginx
+    ports:
+      - "9000:80"
+    volumes:
+      - ./data/www:/var/www/html
+      - ./nginx/server.conf:/etc/nginx/nginx.conf
